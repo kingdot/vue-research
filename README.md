@@ -79,7 +79,7 @@
     
     - 再也不需要记住和书写一堆浏览器前缀：
    
-        ```css
+        ```less
         -webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, .1);
         -moz-box-shadow: 0 2px 3px rgba(0, 0, 0, .1);
         -o-box-shadow: 0 2px 3px rgba(0, 0, 0, .1);
