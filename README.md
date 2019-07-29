@@ -100,15 +100,14 @@
 
 1. **Angular**：常应用于内部管理系统，OA平台等
 
-2. **React**：facebook，知乎，优酷，滴滴，美团，拼多多，抖音... ...
+2. **React**：[facebook](https://www.facebook.com/)，[知乎](https://www.zhihu.com/)，[优酷](https://www.youku.com/)，[滴滴](https://www.didiglobal.com/)，[美团](https://bj.meituan.com/)，[拼多多](https://www.pinduoduo.com/)，[抖音](https://sso.douyin.com/)... ...
 
-3. **Vue**：GitLab,  哔哩哔哩,  爱奇艺，简书，掘金，蘑菇街，今日头条，招商银行校园招聘... ...
+3. **Vue**：[GitLab](https://gitlab.com/), [哔哩哔哩](https://www.bilibili.com/),  [爱奇艺](https://www.iqiyi.com/)，[简书](https://www.jianshu.com/)，[掘金](https://juejin.im/)，[蘑菇街](https://www.mogu.com/)，[今日头条](https://www.toutiao.com/)，[招商银行校园招聘](http://career.cloud.cmbchina.com/index.html)... ...
 
-![](https://note.youdao.com/yws/api/personal/file/3829BB8E70E14DA7957C4F13D741018F?method=download&shareKey=00f2008a199da01dbaff26ee6ceb4535)
+    ![](https://note.youdao.com/yws/api/personal/file/3829BB8E70E14DA7957C4F13D741018F?method=download&shareKey=00f2008a199da01dbaff26ee6ceb4535)   
+    当然，我也在用( ' – ' )
 
-当然，我也在用( ' – ' )
-
-考虑到学习曲线是否陡峭和是否允许渐进性升级，最后决定我们这次选择使用 `Vue`，因此接下来，我们一起走进 `Vue` 的世界看一看~
+考虑到学习曲线是否陡峭和是否允许渐进性升级，我们最后决定选用 `Vue`，因此接下来，我们一起走进 `Vue` 的世界看一看~
 
 ## 七、Vue初识
 
@@ -188,9 +187,9 @@ OK，废话不多说，既然 `Vue` 受到这么多人的认可，我们接下�
 
 ## 十、要解决的一些问题
 
-1. 打包出的目录结构跟原项目保持一致，从而复用静态资源（图片，公共样式）
+- [x] 打包出的目录结构跟原项目保持一致，从而复用静态资源（图片，公共样式）
 
-2. 原项目路由不受影响（后端需要对单页面和多页面做不同的适配调整）
+- [ ] 原项目路由不受影响（后端需要对单页面和多页面做不同的适配调整）
 
 3. 如果是单页面方案，需进行页面首次加载提速优化
 
