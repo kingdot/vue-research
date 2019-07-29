@@ -60,18 +60,18 @@
 
     告别繁琐的 `dom` 操作，向 `html` 文件中满屏的 `id="xxx"` 说再见，向以下操作说再见：
 
-        ```javascript
-        document.getElementById
-        document.getElementByClassName
-        document.querySelector
-        $("xxx").attr(x, y)
-        $("xxx").addClass(x)
-        ... ...
+    ```javascript
+    document.getElementById
+    document.getElementByClassName
+    document.querySelector
+    $("xxx").attr(x, y)
+    $("xxx").addClass(x)
+    ... ...
 
-        ======================================>
+    ======================================>
 
-        <div>{{data.prop1}}</div>
-        ```
+    <div>{{data.prop1}}</div>
+    ```
 
 2. 对于 `CSS` 来说:
 
