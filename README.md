@@ -26,7 +26,7 @@
 
 ### 3. SPA流行，MVVM兴起：
 
-![](https://note.youdao.com/yws/api/personal/file/01A663EA8FD8457AB9D2004632AB7485?method=download&shareKey=edfb3039002ca3f3daa2da4fba5b44aa)
+<img src="https://note.youdao.com/yws/api/personal/file/01A663EA8FD8457AB9D2004632AB7485?method=download&shareKey=edfb3039002ca3f3daa2da4fba5b44aa" width="300px">
 
 `Angular`、`React`、`Vue` 三分天下，`jQuery` 逐渐退出历史舞台
 
@@ -50,7 +50,7 @@
 
 ## 四、工欲善其事必先利其器
 
-![](https://note.youdao.com/yws/api/personal/file/FDD15990D39447C9BB81188F1BEE1F10?method=download&shareKey=3520103cd62eead8b098404f75ed9915)
+<img src="https://note.youdao.com/yws/api/personal/file/FDD15990D39447C9BB81188F1BEE1F10?method=download&shareKey=3520103cd62eead8b098404f75ed9915" width="300px">
 
 ## 五、框架能给我们带来什么？
 
@@ -203,4 +203,7 @@ OK，废话不多说，既然 `Vue` 受到这么多人的认可，我们接下�
 
 > 学习一门新技术，最好的方法就是把它用起来~
 
-## <center>谢谢大家!</center>
+<br/>
+<br/>
+
+## <div align="center">谢谢大家!</div>
