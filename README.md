@@ -185,16 +185,18 @@ OK，废话不多说，既然 `Vue` 受到这么多人的认可，我们接下�
 
 2. 巧妙地设计了一套响应式系统来实现MVVM，实现精准的变更检测
 
-    ```
-    ~v1.x    Object.defineProperty(obj, "key", {
-                enumerable: true,
-                configurable: true,
-                writable: false,
-                get: function(){...},
-                set: function(){...}
-            });
+    ```javascript
+    // ~v1.x    
+    Object.defineProperty(obj, "key", {
+        enumerable: true,
+        configurable: true,
+        writable: false,
+        get: function(){...},
+        set: function(){...}
+    });
 
-    v2.0~   Proxy  代理对某个对象的所有操作
+    // v2.0~   
+    Proxy  代理对某个对象的所有操作
     ```
 
 3. 吸收了 `Angular` 的模板语法和 `React` 的虚拟 `DOM`，集众家之所长
@@ -239,13 +241,13 @@ OK，废话不多说，既然 `Vue` 受到这么多人的认可，我们接下�
 
 - 基于字符串模板缺乏语法高亮，在 `HTML` 有多行的时候，需要用到丑陋的'+'号
 
-- 不支持 CSS 模块化，意味着当 `HTML` 和 `JavaScript` 组件化时，`CSS` 明显被遗漏
+- 不支持 `CSS` 模块化，意味着当 `HTML` 和 `JavaScript` 组件化时，`CSS` 明显被遗漏
 
 - 没有构建步骤，限制只能使用 `HTML` 和 `ES5 JavaScript`, 而不能使用预处理器，如 `Pug` (formerly Jade) 和 `Babel`
 
 2. 使用构建工具
 
-- 要学习新的 `JavaScript` 规范 —— `ES6`，NodeJs，构建工具的使用，有一定学习成本
+- 要学习新的 `JavaScript` 规范 —— `ES6`，`Node.js`，构建工具的使用，有一定学习成本
 
 ## 十、要解决的一些问题
 
