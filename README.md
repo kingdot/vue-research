@@ -52,15 +52,69 @@
 
 <img src="https://note.youdao.com/yws/api/personal/file/FDD15990D39447C9BB81188F1BEE1F10?method=download&shareKey=3520103cd62eead8b098404f75ed9915" width="300px">
 
+> 如果说近几年前端能取得如此迅速的发展，第一是因为 `Google` 推出了 `V8` 使得 `js` 的执行速度飙升，那么第二当属是瑞安·达尔（Ryan Dahl）开发的 `Node.js` 了。它奠定了 `JavaScript` 工程化和作为 `Server` 端开发语言的基石。
+
 ## 五、框架能给我们带来什么？
 
 1. 对于 `HTML` 来说：
 
-    告别繁琐的 `dom` 操作，向 `html` 文件中满屏的 `id` 说再见，向 `getElementByXXX`，`querySelector(…)` 说再见，向 `$(“xxx”).xx(XXX)` 说再见
+    告别繁琐的 `dom` 操作，向 `html` 文件中满屏的 `id="xxx"` 说再见，向以下操作说再见：
 
-2. 对于 `CSS` 来说；
+        ```javascript
+        document.getElementById
+        document.getElementByClassName
+        document.querySelector
+        $("xxx").attr(x, y)
+        $("xxx").addClass(x)
+        ... ...
 
-    大胆使用最新的 `css3` 特性，不使用任何 `JS` 动画库即可轻松制作狂拽酷炫X炸天的特效。
+        ======================================>
+
+        <div>{{data.prop1}}</div>
+        ```
+
+2. 对于 `CSS` 来说:
+
+    - 大胆使用最新的 `css3` 特性，不使用任何 `JS` 动画库即可轻松制作狂拽酷炫X炸天的特效。
+    
+    - 再也不需要记住和书写一堆浏览器前缀：
+   
+        ```css
+        -webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, .1);
+        -moz-box-shadow: 0 2px 3px rgba(0, 0, 0, .1);
+        -o-box-shadow: 0 2px 3px rgba(0, 0, 0, .1);
+        box-shadow: 0 2px 3px rgba(0, 0, 0, .1);
+
+        =========================================>
+
+        box-shadow: 0 2px 3px rgba(0, 0, 0, .1);
+        ```
+    - 最最最舒服的要属可以通过引入 `css预处理器` ，比如 `sass`, `less` 等, 从而支持 `css` 嵌套书写：
+
+        ```sass
+        .wrapper {...}
+        .wrapper::before {...}
+        .wrapper .main {...}
+        .wrapper .main .block {...}
+
+        ==========================================>
+
+        .wrapper{
+            background: #eee;
+            &::before{
+                positon: absolute;
+                content: "";
+            }
+
+            .main{
+                color: #fff;
+
+                .block{
+                    width: 5px;
+                }
+            }
+        }
+        ```
 
 3. 对于 `JS` 来说：
 
