@@ -91,7 +91,7 @@
         ```
     - 最最最舒服的要属可以通过引入 `css预处理器` ，比如 `sass`, `less` 等, 从而支持 `css` 嵌套书写：
 
-        ```sass
+        ```less
         .wrapper {...}
         .wrapper::before {...}
         .wrapper .main {...}
