@@ -59,14 +59,16 @@ function A(name, age){
   this.tall = '180cm';
 }
 A.prototype.funcA = function(){
-  consolo.log(this.name + this.age)
+  console.log(this.name + this.age)
 }
 
 function B(name, age, sex){
   A.apply(this, [...arguments].slice(0,2));
   this.sex = sex;
 }
-B.prototype.__proto__ = A.prototype
+//B.prototype.__proto__ = A.prototype // 不建议使用
+Object.setPrototypeOf(B.prototype, A.prototype)
+
 
 let aa = new A('parent', 40);
 let bb = new B('child', 18, 'male');
