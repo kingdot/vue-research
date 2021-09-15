@@ -61,7 +61,7 @@ function A(name, age){
 A.prototype.funcA = function(){
   return this.name + this.age
 }
-
+// 自己实现继承
 function B(name, age, sex){
   A.apply(this, [...arguments].slice(0,2));
   this.sex = sex;
@@ -76,7 +76,7 @@ console.log(bb, bb.funcA())
 
 ```
 
-而ES6提出的基于class的写法，实际上正是以上步骤的语法糖:
+而ES6提出的基于class的extends继承写法，实际上正是以上步骤的语法糖:
 ```
 class A{
   constructor(name, age){
