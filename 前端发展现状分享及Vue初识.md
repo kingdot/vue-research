@@ -59,7 +59,7 @@ function A(name, age){
   this.tall = '180cm';
 }
 A.prototype.funcA = function(){
-  console.log(this.name + this.age)
+  return this.name + this.age
 }
 
 function B(name, age, sex){
@@ -76,10 +76,88 @@ console.log(bb, bb.funcA())
 
 ```
 
+而ES6提出的基于class的写法，实际上正是以上步骤的语法糖:
+```
+class A{
+  constructor(name, age){
+    this.name = name;
+    this.age = age;
+    this.tall = '180cm';
+  }
+  funcA(){
+      return this.name + this.age
+  }
+}
 
-举例：toString()方法的查找过程，length
+class B extends A{
+  constructor(name, age, sex){
+    super(name, age);
+    this.sex = sex;
+  }
+}
 
-## 基于作用域链和原型链的变量查找模型
+let aa = new A('parent', 40);
+let bb = new B('child', 18, 'male');
+console.log(bb, bb.funcA())
+```
+
+## 作用域链
+> javascript有四种作用域：全局作用域、函数作用域、块级作用域（let/const形成）、eval作用域   
+
+```javascript
+for(var i = 0; i < 3; i++){
+    console.log(i);
+}
+
+console.log(i); //3
+
+// let形成块级作用域
+for(let i = 0; i < 3; i++){
+    console.log(i);
+}
+
+console.log(i); // i is not defined
+```
+
+### 作用域链负责变量查找
+
+var x = 10;
+
+function foo() {
+    var y = 20;
+    
+    function bar() {
+        var z = 30;
+       
+        console.log(x + y + z); //60
+    };
+    
+    bar()
+};
+
+foo();
+
+### 基于作用域链和原型链的变量查找模型
+
+```javascript
+var parent = {bb: 111};
+var child = {};
+child.__proto__ = parent;
+
+function foo() {
+    var y = 20;
+    
+    function bar() {
+        var z = 30;
+       
+        console.log(y + z + child.bb); // 161
+    };
+    
+    bar()
+};
+
+foo();
+```
 
 
 
